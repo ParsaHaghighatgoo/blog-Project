@@ -64,7 +64,25 @@ app.post("/compose",function(req, res){
   res.redirect("/");
 });
 
+app.get("/posts/:postRouteParams", function(req, res) {
+  let check = req.params.postRouteParams;
+  let flag = false;
+  
+  for(let i = 0 ;i < posts.length ;i++){
+    if(check === posts[i].composeTitle){
+      flag = true;
+      break;
+    }
+  }
+  
+  if(flag){
+    console.log("match found");
+  }
 
+  else{
+    console.log("no");
+  }
+});
 
 
 //PORT

@@ -3,6 +3,10 @@
 <h1>Home</h1>
 <p><%= homeStartingContent %></p>
 
-<% console.log(posts); %>
+<% posts.forEach(element => { %>
+    <h1><%= element.composeTitle %></h1>
+    <p><%= element.composePost %></p>
+<% }); %>
+
 
 <%- include("partials/footer") %>
