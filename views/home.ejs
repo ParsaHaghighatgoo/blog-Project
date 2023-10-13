@@ -5,7 +5,8 @@
 
 <% posts.forEach(element => { %>
     <h1><%= element.composeTitle %></h1>
-    <p><%= element.composePost %></p>
+    <p><%= element.composePost.substring(0, 100) + "..." %>
+    <a href="/posts/<%= element.composeTitle %>">Read More</a></p>
 <% }); %>
 
 
