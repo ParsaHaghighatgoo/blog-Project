@@ -1,2 +1,2 @@
 # blog-Projects
-this is a blog project
+This is a full-stack blog project using bootstrap/node(express/ejs)
